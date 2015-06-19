@@ -1,0 +1,248 @@
+
+body{
+    font-size:14px;
+    color:#666;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.foto
+{
+    position: relative;
+    margin: 10px auto;
+    height: 255px;
+    width: 240px
+}
+.loga li {
+    display: inline-block;
+    margin: 15px 15px 0 15px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.loga li a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.bxslider{
+    width: auto;
+    position: relative;
+}
+.slider
+{
+    position: relative;
+    margin: 0 7px;
+    width: 240px;
+    height: 240px;
+}
+.sliderText
+{
+    width: 100%;
+    height: inherit;
+}
+.social
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.fb
+{
+    width:240px;
+    margin: auto;
+    text-align: center;
+}
+.text-nadpis-1
+{
+    font-family: 'BenchNine', sans-serif;
+    font-size:50px;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+    color: #b6972d;
+    text-align: center;
+}
+a.text-nadpis-1:hover,
+a.text-nadpis-1:active,
+a.text-nadpis-1:focus {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #b6971d;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+.datum
+{
+    font-size: 14px;
+    color: #606060;
+    margin: 10px 0;
+    text-align: right;
+}
+.obrazek-v-textu
+{
+    display: block;
+    margin: auto;
+    height: inherit;
+    width: 60%;
+    margin-bottom: 30px;
+}
+.sdileni
+{
+    display: block;
+    margin: auto;
+    width: 65%;
+}
+.header-logo
+{
+    display: block;
+    margin: auto;
+    font-family: 'Poiret One', cursive;
+    font-size: 74px;
+    color: #000;
+}
+.odkazyStrankovani
+{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 25px;
+    width: 60%;
+
+}
+.obsah
+{
+    margin-top: 20px;
+}
+.img-logo
+{
+    margin:  0 27px 22px 0;
+    float: inherit;
+}
+#poll {
+    text-align: left;
+    margin: auto;
+    width: 100%;
+}
+#poll p{
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+#pool p.celkem
+{
+    font-size: 10px;
+}
+.travel{
+    margin: 10px 0 0 0;
+}
+.text-pictures{
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    height:inherit !important;
+    float: left;
+}
+.paging{
+    font-size: 25px;
+    text-decoration: none;
+    color: #b6971d ;
+}
+.paging:hover{
+    text-decoration: none;
+    color: #b6971d;
+    opacity: 0.8;
+}
+.instagram-show{
+    allowTransparency:"true";
+    frameborder:"0";
+    scrolling:"no";
+    border:none;
+    overflow:hidden;
+    width: 240px;
+    height: 240px;
+}
+.header-wrapper{
+    width: 100%;
+    height: 91%;
+    max-height: 600px;
+}
+.paging-buttons{
+    border: none;
+    margin: 0 5px;
+    padding: 0 8px;
+    color: #b6972d;
+    background-color: #000;
+    opacity: 0.75;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.paging-buttons:hover,
+.paging-buttons:active {
+    opacity: 1;
+}
+.read-more-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.index span{
+    background-image: url(../image/header-background-index.jpg);
+}
+.moda span{
+    background-image: url(../image/header-background-mode.jpg)
+}
+.traveling span{
+    background-image: url(../image/header-travel.JPG)
+
+}
+.culture span{
+    background-image: url(../image/header-background-culture.jpg)
+
+}
+.food span{
+    background-image: url(../image/header-background-food.jpg)
+
+}
+.cosmetics span{
+    background-image: url(../image/header-background-cosmetics.jpg)
+
+}
+.fitness span{
+    background-image: url(../image/header-background-fitness.jpg)
+
+}
+.instagram-grid{
+    margin: 20px 0;
+}
+.poll-rozmezi{
+    float: left;
+    display: inline;
+}
+.bio-wr{
+    margin: 20px 0;
+    padding: 10px ;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    font-family: "Noto Sans", arial, helvetica, sans-serif;
+
+}
+.bio-wr .foto-bio{
+    float: left;
+    padding: 0 3%;
+}
+.bio-wr p{
+    padding: 0 3% 8.5%;
+}
+.bio-wr .text-nadpis-1{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.mapa{
+    height: 400px;
+    width: 1024px;
+    margin-top: 30px;
+}
+.subunit-label{
+    fill: #873159;
+    z-index: 1000;
+    font-size: 25px;
+    text-anchor: middle;
+}
