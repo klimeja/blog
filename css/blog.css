@@ -246,3 +246,18 @@ a.text-nadpis-1:focus {
     font-size: 25px;
     text-anchor: middle;
 }
+.footer-icons{
+    float: left;
+    padding: 0 20px;
+}
+.footer-icons li{
+    display: inline-block;
+    padding: 0 5px;
+}
+.footer-icons li a {
+    color: #b6972d;
+    opacity: 0.75;
+}
+.footer-icons li a:hover{
+    opacity: 1;
+}

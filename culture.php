@@ -8,6 +8,7 @@ include'databaze.php';
     <meta autor = "Jan Kliment" >
     <meta http-equiv="content-type" content="text/html; charset=utf-16">
     <title>Lifestyle blog - Andrea Beňová</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/blog.css">
     <link href='http://fonts.googleapis.com/css?family=BenchNine:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -39,7 +40,7 @@ include'databaze.php';
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Galerie</a>
+                        <a href="galerie.html">Galerie</a>
                     </li>
                     <li>
                         <a href="traveling.php">Cestování</a>
@@ -123,6 +124,30 @@ include'databaze.php';
         <?php
         $db->paging()
         ?>
+    </div>
+</div>
+<div class="panel-footer">
+    <div class="container">
+        <div class="navbar-left">
+            <ul class="footer-icons">
+                <li><a href="https://www.facebook.com/abenova1?fref=ts" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a></li>
+                <li><a href="https://instagram.com/andrea_benova/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a></li>
+                <li><a href="https://twitter.com/benova179" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a></li>
+                <li><a href="https://www.pinterest.com/anniesecretblog/" target="_blank">
+                        <i class="fa fa-pinterest"></i>
+                    </a></li>
+            </ul>
+            Lifestyle Blog Annie's Secrets
+        </div>
+        <div class="navbar-right">
+            <span style="padding: 0 5px"> All rights reserved.</span> Created by <span style="color:#fff; padding: 0 10px "> Jan Kliment</span>
+        </div>
     </div>
 </div>
 <!--<div class="col-sm-6 col-md-4 col-xs-12">

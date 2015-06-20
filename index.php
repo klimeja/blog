@@ -40,7 +40,7 @@ include'databaze.php';
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Galerie</a>
+                        <a href="galerie.html">Galerie</a>
                     </li>
                     <li>
                         <a href="traveling.php">Cestování</a>
@@ -137,6 +137,30 @@ include'databaze.php';
             <iframe src="http://www.intagme.com/in/?u=YW5kcmVhX2Jlbm92YXxpbnwyMDB8MTB8MXx8bm98MHx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 200px" ></iframe>
         </div>
         </div>
+    <div class="panel-footer">
+        <div class="container-fluid">
+            <div class="navbar-left">
+                <ul class="footer-icons">
+                    <li><a href="https://www.facebook.com/abenova1?fref=ts" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a></li>
+                    <li><a href="https://instagram.com/andrea_benova/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
+                    <li><a href="https://twitter.com/benova179" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a></li>
+                    <li><a href="https://www.pinterest.com/anniesecretblog/" target="_blank">
+                            <i class="fa fa-pinterest"></i>
+                        </a></li>
+                </ul>
+                Lifestyle Blog Annie's Secrets
+            </div>
+            <div class="navbar-right">
+                <span style="padding: 0 5px"> All rights reserved.</span> Created by <span style="color:#fff; padding: 0 30px 0 10px "> Jan Kliment</span>
+            </div>
+            </div>
+        </div>
         <!--<div class="col-sm-6 col-md-4 col-xs-12">
                 <div class="loga">
                     <a class=" btn btn-social-icon btn-lg btn-instagram">
@@ -222,7 +246,6 @@ include'databaze.php';
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/poll.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
         <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];

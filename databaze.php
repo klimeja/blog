@@ -65,7 +65,6 @@ class databaze
         $this->od = $this->getOd();
         $this->dotaz = $this->getdotaz($kategorie);
     }
-
     public function obrazkyProSlider($id)
     {
         $sql = mysql_query("Select obrazky from `text-obsah` WHERE id = $id;");
@@ -92,13 +91,13 @@ class databaze
         </script>-->
     <?php
     }
-
     public function vyber()
     {
         while ($zaznam = @MySQL_Fetch_Array($this->dotaz)) {
             $spojenejtext = preg_replace('/\s+/', '', $zaznam["nadpis"]);
             $odkaz = strtolower($spojenejtext . ".html");
             $zaznam['datum'] = strtotime($zaznam['datum']);
+            $id = $zaznam['id']
             ?>
             <p class="datum"><?php echo date('d M Y',$zaznam['datum'])?></p>
             <a class="text-nadpis-1" href= <?php echo $odkaz ?>>
@@ -111,7 +110,7 @@ class databaze
 
                     <?php
                     $comments = array();
-                    $result = mysql_query("SELECT * FROM comments ORDER BY id ASC");
+                    $result = mysql_query("SELECT * FROM comments WHERE article_id = $id ORDER BY id ASC");
 
                     while($row = mysql_fetch_assoc($result))
                     {
@@ -134,22 +133,22 @@ foreach($comments as $c){
 ?>
 
                     <div id="addCommentContainer">
-                        <p>Add a Comment</p>
-                        <form id="addCommentForm" method="post" action="">
+                        <p>Přídat komentář</p>
+                        <form id="addCommentForm" method="post" action="submit.php">
                             <div>
-                                <label for="name">Your Name</label>
+                                <label for="name">Jméno</label>
                                 <input type="text" name="name" id="name" />
 
-                                <label for="email">Your Email</label>
+                                <label for="email">E-mail</label>
                                 <input type="text" name="email" id="email" />
 
-                                <label for="url">Website (not required)</label>
-                                <input type="text" name="url" id="url" />
+                                <label for="article_id" style="display: none"></label>
+                                <input type="text" name="article_id" id="article_id" value="<?php echo $id ?>" style="display: none" />
 
-                                <label for="body">Comment Body</label>
+                                <label for="body">Komentář</label>
                                 <textarea name="body" id="body" cols="20" rows="5"></textarea>
 
-                                <input type="submit" id="submit" value="Submit" />
+                                <input type="submit" id="submit" value="Odeslat" />
                             </div>
                         </form>
                     </div>
