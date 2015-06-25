@@ -190,11 +190,11 @@ foreach($comments as $c){
             <?php
           for($i = 1; $i<=$this->pocetCelkem; $i++) {
               if($i == 1){
-                  echo "<a href='#clanky'><button class='paging-buttons' onclick='switchpage(\"$this->kategorie\",$this->pocetCelkem,$i)'>$i</button></a>";
+                  echo "<a class='paging-link' href='#clanky'><button class='paging-buttons' onclick='switchpage(\"$this->kategorie\",$this->pocetCelkem,$i)'>$i</button></a>";
 
               }
               else if ($i<=$this->pocetCelkem - RADKY ) {
-                  echo "<a href='#clanky'><button  class='paging-buttons' onclick='switchpage(\"$this->kategorie\",$this->pocetCelkem,$i + 1)'>$i</button></a>";
+                  echo "<a class='paging-link' href='#clanky'><button  class='paging-buttons' onclick='switchpage(\"$this->kategorie\",$this->pocetCelkem,$i + 1)'>$i</button></a>";
               }
           }
             ?>

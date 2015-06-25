@@ -23,6 +23,7 @@
         lessLink: 'Close',
         embedCSS: true,
         blockCSS: 'display: block; width: 100%;',
+        hoverCSS: '[data-readmore-toggle]:hover{ text-decoration: none;}',
         startOpen: false,
 
         // callbacks
@@ -108,7 +109,7 @@
         styles += options.selector + ' + [data-readmore-toggle], ' +
           options.selector + '[data-readmore]{' +
             options.blockCSS +
-          '}';
+          '}'+ options.hoverCSS;
       }
 
       // Include the transition CSS even if embedCSS is false

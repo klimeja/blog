@@ -118,23 +118,26 @@ include'databaze.php';
         <p>Jmenuji se Andrea. Je mi 19 let. Miluji fotografování a mojí rodinu. Ráda poznávám nové věci a chci, aby jste je poznávali se mnou. Věřím, že každý z nás má na světě nějaké poslání - já na to moje musím ještě přijít. Mým snem je procestovat celý svět. Ten sen si hodlám splnit.</p>
         </div>
         </div>-->
-        <div class="container" id="clanky">
+        <div class="container">
+            <div class="col-sm-10" id="clanky">
         <?php
             $db = new databaze('celkem');
             $db->vyber();
             ?>
         </div>
-    </div>
+            </div>
     <div class="container">
+        <div class="col-sm-10">
         <div class="pager-arrows">
             <?php
             $db->paging();
             ?>
         </div>
         </div>
+        </div>
     <div class="container-fluid instagram-grid">
         <div class="container">
-            <iframe src="http://www.intagme.com/in/?u=YW5kcmVhX2Jlbm92YXxpbnwyMDB8MTB8MXx8bm98MHx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 200px" ></iframe>
+            <iframe src="http://www.intagme.com/in/?u=YW5kcmVhX2Jlbm92YXxpbnwyMDB8MTB8MXx8bm98MHx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1195px; height: 200px" ></iframe>
         </div>
         </div>
     <div class="panel-footer">
@@ -257,10 +260,10 @@ include'databaze.php';
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/readmore.js"></script>
         <script>$('article').readmore({
-                speed: 1000,
-                collapsedHeight: 130,
-                moreLink: '<a href="#"><button type="submit" class="btn btn-book read-more-btn" style="border-radius: 4px;display: block; margin: 10px auto 10px"><span class="glyphicon glyphicon-book" aria-hidden="true" style="padding: 5px"></span> více </button></a>',
-                lessLink: '<a href="#"><button type="submit" class="btn btn-book read-more-btn" style="border-radius: 4px;display: block; margin: 10px auto 10px"><span class="glyphicon glyphicon-book" aria-hidden="true" style="padding: 5px"></span> méně </button></a>'
+                speed: 800,
+                collapsedHeight: 200,
+                moreLink: '<a  href="#"><span class="more"> přečíst více </span></a>',
+                lessLink: '<a  href="#"><span class="more"> zmenšit </span></a>'
             })
         </script>
 </body>

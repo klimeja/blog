@@ -237,10 +237,10 @@ include'databaze.php';
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/readmore.js"></script>
 <script>$('article').readmore({
-        speed: 500,
-        collapsedHeight: 130,
-        moreLink: '<a href="#"><button type="submit" class="btn btn-book read-more-btn" style="border-radius: 4px;display: block; margin: 10px auto 10px"><span class="glyphicon glyphicon-book" aria-hidden="true" style="padding: 5px"></span> více </button></a>',
-        lessLink: '<a href="#"><button type="submit" class="btn btn-book read-more-btn" style="border-radius: 4px;display: block; margin: 10px auto 10px"><span class="glyphicon glyphicon-book" aria-hidden="true" style="padding: 5px"></span> méně </button></a>'
+        speed: 800,
+        collapsedHeight: 200,
+        moreLink: '<a  href="#"><span class="more"> přečíst více </span></a>',
+        lessLink: '<a  href="#"><span class="more"> zmenšit </span></a>'
     })
 </script>
 </body>
