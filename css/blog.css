@@ -67,18 +67,19 @@ body{
     text-transform: uppercase;
     color: #000;
     text-align: center;
+    margin: auto;
+    display: block;
 }
-a.text-nadpis-1:hover,
-a.text-nadpis-1:active,
-a.text-nadpis-1:focus {
-    text-decoration: none;
-    opacity: 0.7;
-    color: #b6971d;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    transform-origin: center bottom;
+.text-nadpis-2
+{
+    font-family: 'BenchNine', sans-serif;
+    font-size:30px;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+    margin: auto;
+    display: block;
 }
 .datum
 {
@@ -203,7 +204,7 @@ a.text-nadpis-1:focus {
 
 }
 .food span{
-    background-image: url(../image/header-background-food.jpg)
+    background-image: url(../image/food.jpg)
 
 }
 .cosmetics span{
@@ -215,31 +216,30 @@ a.text-nadpis-1:focus {
 
 }
 .instagram-grid{
-    margin: 20px 0;
+    margin: 0;
 }
 .poll-rozmezi{
     float: left;
     display: inline;
 }
 .bio-wr{
-    margin: 20px 0;
-    padding: 10px ;
-    background-color: rgba(0,0,0,0.6);
-    color: #fff;
+    margin: 20px 10px 0 0;
     font-family: "Noto Sans", arial, helvetica, sans-serif;
 
 }
 .bio-wr .foto-bio{
-    float: left;
+    position: relative;
+    display: block;
+    margin: auto;
     padding: 0 3%;
-}
-.bio-wr p{
-    padding: 0 3% 8.5%;
 }
 .bio-wr .text-nadpis-1{
     display: block;
     text-align: center;
     margin: auto;
+}
+.bio-wr p {
+    padding: 0 5% 0 10%;
 }
 .mapa{
     height: 400px;
@@ -284,4 +284,59 @@ a.text-nadpis-1:focus {
 }
 .paging-link{
     width: 5px;
+}
+.footer{
+    background-color: #000;
+}
+.footer span{
+    position: relative;
+    display: inline-block   ;
+    padding: 8px 0;
+    color: #fff;
+}
+.right-footer{
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+@media (max-width: 786px) {
+    .footer span{
+        text-align: center;
+        margin: auto;
+    }
+    .right-footer{
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+}
+.blog-img{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 30px 0 0 0;
+}
+.popis{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 20px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+}
+#clanky{
+    margin-top: 10px;
+}
+.pool-wr{
+    margin-left: 10%;
+}
+.ramecek{
+    border-right: 1px solid #333;
+    margin-top: 10px;
 }

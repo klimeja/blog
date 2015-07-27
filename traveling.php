@@ -120,18 +120,20 @@
         </div>
     </div>
     <div class="container">
-        <div class="col-sm-12" id="clanky">
+        <div class="col-sm-10" id="clanky">
             <?php
-            $db = new databaze("cestovani");
+            $db = new databaze('cestovani');
             $db->vyber();
             ?>
         </div>
     </div>
     <div class="container">
-        <div class="pager-arrows">
-            <?php
-            $db->paging()
-            ?>
+        <div class="col-sm-10">
+            <div class="pager-arrows">
+                <?php
+                $db->paging();
+                ?>
+            </div>
         </div>
     </div>
     <div class="panel-footer">

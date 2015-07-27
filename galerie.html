@@ -4,7 +4,7 @@
 <head>
     <meta keywords  = "blog, fashion, girl, cosmetic, moda, dívčí,">
     <meta autor = "Jan Kliment" >
-    <meta http-equiv="content-type" content="text/html; charset=utf-16">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Lifestyle blog - Andrea Beňová</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/blog.css">
@@ -17,8 +17,23 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-social.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/header-slider.css">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/pongstagr.am.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/pongstagr.am.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script>
+            var userid   = '679256982',
+                    usrtoken = '679256982.401c5ac.0a183542db5f4ae1b51caae21acadc1e';
+
+            $('#nofilter').pongstgrm({
+                accessId: userid,
+                accessToken: usrtoken,
+                column: 'col-xs-6 col-sm-6',  // you use customized columns
+                count: 4,                      // set the number of media to display
+                show: 'nofilter'
+            });
+    </script>
 </head>
 <body>
 <div class="container-fluid">
@@ -104,8 +119,9 @@
         </div>
     </nav>
 </div>
-<div class="container">
-    <iframe src="http://www.intagme.com/in/?u=YW5kcmVhX2Jlbm92YXxpbnwyMDB8NnwzfHxub3wwfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1200px; height: 600px" ></iframe>    </div>
+<div class="container-fluid" id="nofilter">
+
+</div>
 <div class="panel-footer">
     <div class="container-fluid">
         <div class="navbar-left">

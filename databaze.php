@@ -94,14 +94,16 @@ class databaze
     public function vyber()
     {
         while ($zaznam = @MySQL_Fetch_Array($this->dotaz)) {
-            $spojenejtext = preg_replace('/\s+/', '', $zaznam["nadpis"]);
-            $odkaz = strtolower($spojenejtext . ".html");
+            //$spojenejtext = preg_replace('/\s+/', '', $zaznam["nadpis"]);
+            //$odkaz = strtolower($spojenejtext . ".html");
             $zaznam['datum'] = strtotime($zaznam['datum']);
             $id = $zaznam['id']
             ?>
             <p class="datum"><?php echo date('d M Y',$zaznam['datum'])?></p>
-            <a class="text-nadpis-1" href= <?php echo $odkaz ?>>
-                <?php echo $zaznam["nadpis"] ?></a>
+            <span class="text-nadpis-1">
+                <?php echo $zaznam["nadpis"] ?></span>
+            <span class="text-nadpis-2">
+                <?php echo $zaznam["podnadpis"] ?></span>
             <?php //$this->obrazkyProSlider($id); ?>
             <article class="text-justify">
                 <p class="obsah"><?php echo $zaznam["text"] ?>
@@ -193,7 +195,7 @@ foreach($comments as $c){
                   echo "<a class='paging-link' href='#clanky'><button class='paging-buttons' onclick='switchpage(\"$this->kategorie\",$this->pocetCelkem,$i)'>$i</button></a>";
 
               }
-              else if ($i<=$this->pocetCelkem - RADKY ) {
+              else if ($i<=$this->pocetCelkem - (RADKY-1) ) {
                   echo "<a class='paging-link' href='#clanky'><button  class='paging-buttons' onclick='switchpage(\"$this->kategorie\",$this->pocetCelkem,$i + 1)'>$i</button></a>";
               }
           }

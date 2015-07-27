@@ -1,7 +1,7 @@
 <?php
 if(isset($_COOKIE["hlasoval"])){
     //setcookie('hlasoval','hlas',strtotime("-1 month"));
-    echo 'Již bylo hlasováno.';
+    echo '<div class="pool-wr"> <b style="color: #aa0000">Již bylo hlasováno!!!</b></div>';
     $vote = $_GET["vote"];
 
     $filename = "poll_result.txt";
@@ -49,6 +49,7 @@ else {
     fclose($fp);
 }
 ?>
+    <div class="pool-wr">
     <p>Výsledky ankety</p>
     <table>
         <tr>
@@ -89,4 +90,5 @@ else {
         </tr>
         <tr><td colspan="2" class="celkem-td"><p class="celkem ">Celkem hlasovalo: <?php echo $y+$my+$mo+$o ?></p></td></tr>
     </table>
+    </div>
 <?php

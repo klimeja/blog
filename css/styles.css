@@ -17,21 +17,9 @@ body{
     padding: 12px;
     width: 800px;
     position: relative;
-    border: 1px solid transparent;
-    color: #888;
-    border-radius: 2px;
-    box-shadow: 2px 2px 0px #888;
-    background-color: #F8F8F8;
-	
-	/* CSS3 rounded corners and drop shadows */
-	
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
-
-	-moz-box-shadow:2px 2px 0 #c2c2c2;
-	-webkit-box-shadow:2px 2px 0 #c2c2c2;
-	box-shadow:2px 2px 0 #c2c2c2;
+    border: 1px solid #888;
+    background-color: #333;
+    color: #fff;
 }
 
 .comment .name{
@@ -46,7 +34,7 @@ body{
 	position:absolute;
 	right:15px;
 	top:10px;
-	color:#000;
+	color:#fff;
 }
 
 .comment p,

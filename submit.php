@@ -15,13 +15,10 @@ if ($_POST['email'])
 if ($_POST['body'])
     $body = $_POST['body'];
 if ($name && $article_id && $email && $body ) {
-    $sql = "INSERT INTO `comments`(name,article_id,email,body) VALUES('$name','$article_id','$email','$body')";
+    $db_charset = mysql_query("SET CHARACTER SET utf8");
+    $sql = " INSERT INTO `comments`(name,article_id,email,body) VALUES('$name','$article_id','$email','$body')";
     if ($conn->query($sql) === TRUE) {
-        echo '<script language="javascript">';
-        echo 'alert("message successfully sent")';
-        echo '</script>';
         if (isset($_SERVER["HTTP_REFERER"])) {
-            echo "zpráva byla odeslána";
             header("Location: " . $_SERVER["HTTP_REFERER"]);
         }
     } else {

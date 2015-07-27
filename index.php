@@ -19,7 +19,6 @@ include'databaze.php';
     <link rel="stylesheet" href="bootstrap/css/bootstrap-social.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/header-slider.css">
-    <link rel="stylesheet" href="css/demo.css">
     <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -111,38 +110,54 @@ include'databaze.php';
             <li><span></span><div><h3>Annie's<br> Secrets</h3></div></li>
         </ul>
     </div>
-    <!--<div class="container">
-        <div class=" text-justify bio-wr">
-            <img  class="foto-bio" src="image/foto-bio.jpg"  >
-            <a class="text-nadpis-1" href="about.php">O MNĚ</a>
-        <p>Jmenuji se Andrea. Je mi 19 let. Miluji fotografování a mojí rodinu. Ráda poznávám nové věci a chci, aby jste je poznávali se mnou. Věřím, že každý z nás má na světě nějaké poslání - já na to moje musím ještě přijít. Mým snem je procestovat celý svět. Ten sen si hodlám splnit.</p>
-        </div>
-        </div>-->
         <div class="container">
-            <div class="col-sm-10" id="clanky">
+            <div class="col-sm-9 ramecek">
+                <div id="clanky">
         <?php
             $db = new databaze('celkem');
             $db->vyber();
             ?>
         </div>
+                <div class="pager-arrows">
+                    <?php
+                    $db->paging();
+                    ?>
+                </div>
+                </div>
+            <div class="col-sm-3" >
+                    <div class=" text-justify bio-wr">
+                        <img  class="foto-bio" src="image/foto-bio.jpg"  >
+                        <span class="text-nadpis-1">O MNĚ</span>
+                        <p>Jmenuji se Andrea. Je mi 19 let. Miluji fotografování a mojí rodinu. Ráda poznávám nové věci a chci, aby jste je poznávali se mnou. Věřím, že každý z nás má na světě nějaké poslání - já na to moje musím ještě přijít. Mým snem je procestovat celý svět. Ten sen si hodlám splnit.</p>
+                    </div>
+                    <div id="poll">
+                        <span class="text-nadpis-1">ANKETA</span>
+                        <div class="pool-wr">
+                            <p>Kolik je ti let?</p>
+                    <form>
+                        13-15:
+                        <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+                        <br>15-18:
+                        <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+                        <br>18-21:
+                        <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
+                        <br>více..:
+                        <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
+                    </form>
+                            </div>
             </div>
-    <div class="container">
-        <div class="col-sm-10">
-        <div class="pager-arrows">
-            <?php
-            $db->paging();
-            ?>
-        </div>
-        </div>
-        </div>
+            </div>
+            </div>
     <div class="container-fluid instagram-grid">
+        <div class="row">
         <div class="container">
             <iframe src="http://www.intagme.com/in/?u=YW5kcmVhX2Jlbm92YXxpbnwyMDB8MTB8MXx8bm98MHx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1195px; height: 200px" ></iframe>
         </div>
         </div>
-    <div class="panel-footer">
-        <div class="container-fluid">
-            <div class="navbar-left">
+        <div class="container-fluid footer">
+            <div class="container">
+            <div class="col-sm-6">
+                <span>
                 <ul class="footer-icons">
                     <li><a href="https://www.facebook.com/abenova1?fref=ts" target="_blank">
                             <i class="fa fa-facebook"></i>
@@ -157,13 +172,14 @@ include'databaze.php';
                             <i class="fa fa-pinterest"></i>
                         </a></li>
                 </ul>
-                Lifestyle Blog Annie's Secrets
+                Lifestyle Blog Annie's Secrets</span>
             </div>
-            <div class="navbar-right">
-                <span style="padding: 0 5px"> All rights reserved.</span> Created by <span style="color:#fff; padding: 0 30px 0 10px "> Jan Kliment</span>
+            <div class="col-sm-6">
+                <span class="right-footer"> All rights reserved. Created by Jan Kliment</span>
             </div>
             </div>
-        </div>
+            </div>
+            </div>
         <!--<div class="col-sm-6 col-md-4 col-xs-12">
                 <div class="loga">
                     <a class=" btn btn-social-icon btn-lg btn-instagram">
@@ -257,11 +273,10 @@ include'databaze.php';
                 js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.0";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/readmore.js"></script>
         <script>$('article').readmore({
                 speed: 800,
-                collapsedHeight: 200,
+                collapsedHeight: 620,
                 moreLink: '<a  href="#"><span class="more"> přečíst více </span></a>',
                 lessLink: '<a  href="#"><span class="more"> zmenšit </span></a>'
             })
